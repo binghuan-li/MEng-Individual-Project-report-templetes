@@ -1,0 +1,101 @@
+% LaTeX template for MEng Bioengineering Individual Project Final Report
+% designed by Binghuan W Li (February 2023)
+% compiling engine - XuLaTeX
+
+% ============= ADDING PREAMBLES  =============%
+\documentclass[a4paper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+
+% set main font to Time New Roman, set math font to newtxmath
+\usepackage{fontspec}
+    \setmainfont{Times New Roman}
+\usepackage{newtxmath}
+\usepackage{bm}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+% insertion of graphics
+\usepackage{graphicx}
+\usepackage{float}
+
+% insertion of tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+% appendices
+\usepackage[title]{appendix}
+
+% import reference manager
+\usepackage[sorting=none]{biblatex} 
+\addbibresource{references.bib} %<== change when necessary
+
+% define Imperial blue
+\usepackage{xcolor}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+% write hyperlink colour to Imperial blue
+\usepackage{hyperref}
+\hypersetup{colorlinks,
+            breaklinks,
+            urlcolor=linkcolour,
+            linkcolor=black,
+            citecolor=black}
+
+% rewrite `autoref` commands
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+% disable paragraph indentation for the entire doc
+\setlength\parindent{0pt}
+
+% ============= END OF PREAMBLES  =============%
+
+% need to manually define the following commands
+\newcommand{\reporttitle}{Title of report}
+\newcommand{\reportauthor}{Your Name}
+\newcommand{\reportsupervisor}{Your Supervisor's Name}
+\newcommand{\cid}{your college-id number}
+\newcommand{\wordcount}{word count}
+
+% write PDF metadata - do not change
+\hypersetup{pdftitle={\reporttitle},
+            pdfauthor={\reportauthor}}
+
+% ============= DOCUMENT BEGIN  =============%
+\begin{document}
+
+\include{contents/titlepage}
+
+\include{contents/0_1_Abstract.tex}
+
+\include{contents/0_2_Dedication.tex}
+
+\include{contents/0_3_Acknowledgements.tex}
+
+\tableofcontents
+
+\include{contents/1_Introduction.tex}
+
+\include{contents/2_Methods.tex}
+
+\include{contents/3_Results.tex}
+
+\include{contents/4_Discussion.tex}
+
+\include{contents/5_Conclusion.tex}
+
+%======================================================
+% Print out references with biblatex
+%======================================================
+\printbibliography
+
+%======================================================
+% Appendcies goes here
+%======================================================
+\include{contents/6_Appendix.tex}
+
+% =============== DOCUMENT END ===============%
+\end{document}
