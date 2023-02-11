@@ -1,5 +1,5 @@
 % LaTeX template for MEng Bioengineering Individual Project Final Report
-% designed by Binghuan W Li (February 2023)
+% realized by Binghuan W Li (February 2023)
 % compiling engine - XuLaTeX
 
 % ============= ADDING PREAMBLES  =============%
@@ -12,7 +12,7 @@
     \setmainfont{Times New Roman}
 \usepackage{newtxmath}
 \usepackage{bm}
-\usepackage{pifont}
+\usepackage{pifont} % <= import for tick/cross marks
 \newcommand{\cmark}{\ding{51}}
 \newcommand{\xmark}{\ding{55}}
 
@@ -29,7 +29,7 @@
 
 % import reference manager
 \usepackage[sorting=none]{biblatex} 
-\addbibresource{references.bib} %<== change when necessary
+\addbibresource{references.bib} %<== amend when necessary
 
 % define Imperial blue
 \usepackage{xcolor}
@@ -48,7 +48,7 @@
 \renewcommand{\subsectionautorefname}{Section}
 \renewcommand{\subsubsectionautorefname}{Section}
 
-% disable paragraph indentation for the entire doc
+% disable paragraph indentation
 \setlength\parindent{0pt}
 
 % ============= END OF PREAMBLES  =============%
@@ -64,7 +64,7 @@
 \hypersetup{pdftitle={\reporttitle},
             pdfauthor={\reportauthor}}
 
-% ============= DOCUMENT BEGIN  =============%
+% ============== DOCUMENT BEGIN ==============%
 \begin{document}
 
 \include{contents/titlepage}
