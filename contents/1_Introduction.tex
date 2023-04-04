@@ -2,7 +2,11 @@
 
 \section{Introduction}
 
-%% test
+% ======================================
+% test scripts - please delete
+% ======================================
+{ 
+\color{gray}
 This is a test citation \cite{oreo}, you see the reference got printed out, right? \\
 
 %% test
@@ -10,11 +14,18 @@ Fourier transform is formulated as
 \[
     X(\omega) = \int_{-\infty}^{+\infty} x(t)e^{-j\omega t} dt
 \]
-Navier-Stokes continuity equation is formulated as
+The Navier-Stokes continuity equation is formulated as
 \[
     \nabla \cdot \bm{u} = 0
 \]
 where $\bm{u} \in \{u, v, w\}$ \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{figures/Bioeng.png}
+    \caption{Bioeng is the best dept}
+    \label{fig:my_label}
+\end{figure}
 
 %% test
 \begin{table}[H]
@@ -37,10 +48,11 @@ where $\bm{u} \in \{u, v, w\}$ \\
     4 & \xmark & \xmark & \cmark & \textit{P-P} & 5678 & 5678 & 5678 \\
     \bottomrule
     \end{tabular}
-    \caption{This is a test table}
+    \caption{This is a meaningless table}
     \label{tab:test}
 \end{table}
 
 I want to cite the test table: \autoref{tab:test}, this is a hyperlink. \\
 
 Yayy, \LaTeX \ is working!
+}

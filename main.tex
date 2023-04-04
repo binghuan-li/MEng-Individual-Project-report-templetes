@@ -1,6 +1,10 @@
-% LaTeX template for MEng Bioengineering Individual Project Final Report
-% realized by Binghuan W Li (February 2023)
-% compiling engine - XuLaTeX
+% ==============================================
+% LaTeX template for MEng Bioengineering
+% Individual Project Final Report
+% ==============================================
+% Templete Author: Binghuan W Li (February, April 2023)
+
+% Compilation Engine - XuLaTeX
 
 % ============= ADDING PREAMBLES  =============%
 \documentclass[a4paper, 11pt]{article}
@@ -60,7 +64,7 @@
 \newcommand{\cid}{your college-id number}
 \newcommand{\wordcount}{word count}
 
-% write PDF metadata - do not change
+% write PDF metadata - do NOT change
 \hypersetup{pdftitle={\reporttitle},
             pdfauthor={\reportauthor}}
 
@@ -76,6 +80,12 @@
 \include{contents/0_3_Acknowledgements.tex}
 
 \tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
 
 \include{contents/1_Introduction.tex}
 
