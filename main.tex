@@ -24,6 +24,9 @@
 \usepackage{graphicx}
 \usepackage{float}
 
+% use import function for word counting
+\usepackage{import}
+
 % insertion of tables
 \usepackage{tabularx}
 \usepackage{booktabs}
@@ -89,23 +92,25 @@
 \newpage
 \listoftables
 
-\include{contents/1_Introduction.tex}
+% 'import' supports Overleaf's in-built word counting function, only for IMRaD sections  
+\import{contents}{1_Introduction.tex}
 
-\include{contents/2_Methods.tex}
+\import{contents}{2_Methods.tex}
 
-\include{contents/3_Results.tex}
+\import{contents}{3_Results.tex}
 
-\include{contents/4_Discussion.tex}
+\import{contents}{4_Discussion.tex}
 
-\include{contents/5_Conclusion.tex}
+\import{contents}{5_Conclusion.tex}
 
 %======================================================
 % Print out references with biblatex
 %======================================================
+\newpage
 \printbibliography
 
 %======================================================
-% Appendcies go here
+% Appendices go here
 %======================================================
 \include{contents/6_Appendix.tex}
 
