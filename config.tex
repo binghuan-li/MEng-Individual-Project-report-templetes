@@ -1,0 +1,57 @@
+% ============= ADDING PREAMBLES  =============%
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage{amsmath, amsfonts, amssymb, cancel}
+% set main font to Time New Roman, set math font to XITS
+\usepackage{fontspec}
+    \setmainfont{Times New Roman}
+\usepackage[bold-style=ISO]{unicode-math}
+\setmathfont[Extension=.otf, BoldFont=XITSMath-Bold]{XITSMath-Regular}
+
+% insertion of graphics
+\usepackage{graphicx}
+\usepackage{float}
+
+% use import function for word counting
+\usepackage{import}
+
+% insertion of tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+
+% appendices
+\usepackage[title]{appendix}
+
+% import reference manager
+\usepackage[sorting=none]{biblatex} 
+\addbibresource{references.bib} %<== amend when necessary
+
+% define Imperial blue
+\usepackage{xcolor}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+% write PDF metadata
+\usepackage{hyperref}
+\hypersetup{colorlinks,
+            breaklinks,
+            urlcolor=linkcolour,
+            linkcolor=black,
+            citecolor=black,
+            pdftitle={\reporttitle},
+            pdfauthor={\reportauthor}}
+
+% rewrite `autoref` commands
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+% disable paragraph indentation
+\setlength\parindent{0pt}
+
+% set line spacing to 1.2
+\linespread{1.2}
+
+% ============= END OF PREAMBLES  =============%

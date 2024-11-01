@@ -1,0 +1,41 @@
+\documentclass[a4paper, 11pt]{article}
+
+% need to manually define the following variables
+\def\degree{MEng Biomedical Engineering} % or MEng Molecular Bioengineering
+\def\reporttitle{Title of report}
+\def\reportauthor{Your Name}
+\def\reportsupervisor{Your Supervisor's Name}
+\def\cid{your college-id number}
+\def\wordcount{word count}
+
+\input{config}
+
+% ============= DOCUMENT BEGIN  =============%
+\begin{document}
+
+\include{PLANNING_report_contents/titlepage}
+
+\tableofcontents
+
+\import{PLANNING_report_contents}{1_Project_Specification.tex}
+
+\import{PLANNING_report_contents}{2_Ethical_Analysis.tex}
+
+\import{PLANNING_report_contents}{3_Literature_Review.tex}
+
+\import{PLANNING_report_contents}{4_Implementation_Plan.tex}
+
+\import{PLANNING_report_contents}{5_Risk_Register.tex}
+
+\import{PLANNING_report_contents}{6_Evaluation.tex}
+
+\import{PLANNING_report_contents}{7_Preliminary_Results.tex}
+
+%======================================================
+% Print out references with BibLaTeX
+%======================================================
+\newpage
+\printbibliography
+
+% =============== DOCUMENT END ===============%
+\end{document}

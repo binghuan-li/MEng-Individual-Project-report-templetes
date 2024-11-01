@@ -1,0 +1,26 @@
+GitHub repository: 
+
+This repository contains the LaTeX templates for the BIOE70004/BIOE70057 MEng Individual Project Planning Report / Final Report for the Department of Bioengineering at Imperial College London.
+
+The templates are drafted and maintained by Binghuan Li (binghuan.li19@imperial.ac.uk) in November 2022, February 2023, April 2023, March 2024, and November 2024 (current version).
+
+The report template is structured as follows:
+
+FINAL_report.tex
+├── config.tex
+├── FINAL_report_contents
+│   ├── 0_1_Abstract.tex
+│   ├── 0_2_Dedication.tex
+│   ├── 0_3_Acknoeledgement.tex
+│   ├── 1_Introduction.tex
+│   ├── ...
+
+(similar structured followed by PLANNING_report.tex)
+
+The templates are compatible with the XeLaTeX (2024) compilation engine, available on Overleaf. The choice of XeLaTeX ensures compatibility with Times New Roman and XITS Math fonts. However, you may switch to the pdfLaTeX engine if you prefer to use LaTeX’s default fonts (Computer Modern). To do this, simply remove the following lines in config.tex:
+***
+\usepackage{fontspec}
+    \setmainfont{Times New Roman}
+\usepackage[bold-style=ISO]{unicode-math}
+\setmathfont[Extension=.otf, BoldFont=XITSMath-Bold]{XITSMath-Regular}
+***
