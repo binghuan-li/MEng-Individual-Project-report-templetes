@@ -17,9 +17,10 @@ FINAL_report.tex
 │   ├── 1_Introduction.tex
 │   ├── ...
 
-(similar structured followed by PLANNING_report.tex)
+(similar structure followed by PLANNING_report.tex)
 
 The templates are compatible with the XeLaTeX (2024) compilation engine, available on Overleaf. The choice of XeLaTeX ensures compatibility with Times New Roman and XITS Math fonts. However, you may switch to the pdfLaTeX engine if you prefer to use LaTeX’s default fonts (Computer Modern). To do this, simply remove the following lines in config.tex:
+
 ```
 \usepackage{fontspec}
     \setmainfont{Times New Roman}
