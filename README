@@ -2,9 +2,9 @@ GitHub repository: https://github.com/binghuan-li/MEng-Individual-Project-report
 
 OverLeaf project workspace: https://www.overleaf.com/read/bdnmzvkpstqy#ff2d58
 
-This repository contains the LaTeX templates for the BIOE70004/BIOE70057 MEng Individual Project Planning Report / Final Report for the Department of Bioengineering at Imperial College London.
+This repository holds the LaTeX templates for the Planning Report / Final Report that required in BIOE70004/BIOE70057 MEng Individual Project within the Department of Bioengineering, Imperial College London.
 
-The templates are drafted and maintained by Binghuan Li (binghuan.li19@imperial.ac.uk) in November 2022, February 2023, April 2023, March 2024, and November 2024 (current version).
+The templates are drafted and maintained by Binghuan Li (binghuan.li19@imperial.ac.uk) in November 2022, February 2023, April 2023, March 2024, and November 2024 (current branch).
 
 The report template is structured as follows:
 
@@ -17,9 +17,9 @@ FINAL_report.tex
 │   ├── 1_Introduction.tex
 │   ├── ...
 
-(similar structure followed by PLANNING_report.tex)
+(a similar structure is used by PLANNING_report.tex)
 
-The templates are compatible with the XeLaTeX (2024) compilation engine, available on Overleaf. The choice of XeLaTeX ensures compatibility with Times New Roman and XITS Math fonts. However, you may switch to the pdfLaTeX engine if you prefer to use LaTeX’s default fonts (Computer Modern). To do this, simply remove the following lines in config.tex:
+The templates are compatible with the XeLaTeX (2024), available on Overleaf. The choice of XeLaTeX ensures compatibility with Times New Roman and XITS Math fonts. However, you may switch to the pdfLaTeX  if you prefer to use LaTeX’s Computer Modern font famility. To do this, simply remove the following lines in config.tex:
 
 ```
 \usepackage{fontspec}
