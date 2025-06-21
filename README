@@ -19,7 +19,7 @@ FINAL_report.tex
 
 (a similar structure is used by PLANNING_report.tex)
 
-The templates are compatible with the XeLaTeX (2024), available on Overleaf. The choice of XeLaTeX ensures compatibility with Times New Roman and XITS Math fonts. However, you may switch to the pdfLaTeX  if you prefer to use LaTeX’s Computer Modern font famility. To do this, simply remove the following lines in config.tex:
+The templates are compatible with the XeLaTeX (2024), available on Overleaf. The choice of XeLaTeX ensures compatibility with Times New Roman and XITS Math fonts. However, you may switch to the pdfLaTeX if you prefer to use LaTeX's Computer Modern font family. To do this, simply remove the following lines in config.tex:
 
 ```
 \usepackage{fontspec}
